@@ -1,5 +1,5 @@
-@google = 
-  maps: {}
+@google = maps:
+  event: {}
 
 class google.maps.LatLng
   constructor: (lat, lng) ->
@@ -27,5 +27,16 @@ class google.maps.Point
   
 class google.maps.Size
 
+google.maps.Geocoder = (->
+  Geocoder = ->
+  Geocoder::geocode = ->
+    return
 
-  
+  Geocoder
+ )()
+
+google.maps.event.addListener = (->
+  addListener = ->
+  addListener
+)()
+
