@@ -35,6 +35,19 @@ google.maps.Geocoder = (->
   Geocoder
  )()
 
+google.maps.GeocoderStatus = (->
+  GeocoderStatus = ->
+  @ERROR = "ERROR"
+  @INVALID_REQUEST = "INVALID_REQUEST"
+  @OK = "OK"
+  @OVER_QUERY_LIMIT = "OVER_QUERY_LIMIT"
+  @REQUEST_DENIED = "REQUEST_DENIED"
+  @UNKNOWN_ERROR = "UNKNOWN_ERROR"
+  @ZERO_RESULTS = "ZERO_RESULTS"
+
+  GeocoderStatus
+)()
+
 google.maps.event.addListener = (->
   addListener = ->
   addListener
